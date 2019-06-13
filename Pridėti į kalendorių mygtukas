@@ -1,0 +1,14 @@
+<body>
+
+<!-- Button code -->
+<div title="Add to Calendar" class="addeventatc">
+    Pridėti prie kalendoriaus
+    <span class="start">05/28/2019 08:00 AM</span>
+    <span class="end">05/28/2019 10:00 AM</span>
+    <span class="timezone">Lithuania/Vlnius</span>
+    <span class="title">Apsilankymas pas gydytoją</span>
+    <span class="description">Bendra gydytojo apžiūra ir vaisiaus ištyrimas</span>
+    <span class="location">Pridėkite savo kliniką</span>
+</div>
+
+</body>

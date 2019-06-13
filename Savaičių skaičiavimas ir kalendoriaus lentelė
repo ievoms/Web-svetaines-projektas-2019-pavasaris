@@ -1,0 +1,241 @@
+<table class="wp-block-table-small" >
+    
+	<tbody>
+	    <thead>
+		<tr id="antraste">
+			<th id="savaite_0"> <a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></th>
+			<th id="SAVAITE">Savaitė</th>
+			<th id="SPECIALISTAS">Specialistas</th>
+			<th id="TYRIMAI">Tyrimai</th>
+		</tr>
+		</thead>
+		<tr>
+			<td id="savaite_12"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>iki 12</td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Pirmas apsilankymas pas specialistą, bendra apžiūra</td>
+		</tr>
+		<tr>
+			<td id="savaite_13"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			 <td>13–14</td>
+			 <td>Akušeris ginekologas</td>
+			 <td>Bendra apžiūra, papildomi tyrimai pagal indikacijas</td>
+		</tr>
+		<tr>
+			<td id="savaite_15"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>15–21</td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Bendra apžiūra</td>
+		</tr>
+		<tr>
+			<td id="savaite_18"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>18-20</td>
+			<td>Akušeris ginekologas</td>
+			<td>Ultragarsinis tyrimas</td>
+		</tr>
+		<tr>
+			<td id="savaite_22"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>22–28</td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Bendra apžiūra</td>
+		</tr>
+		<tr>
+			<td id="savaite_24"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>24–28 </td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>gliukozės toleravimo mėginys*
+*esant gestacinio diabeto rizikos veiksnių</td>
+		</tr>
+		<tr>
+			<td id="savaite_27"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>27–28 </td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Rh antikūnų nustatymas*
+*kai moters Rh (–), o vyro Rh (+) (B)</td>
+		</tr>
+		<tr>
+			<td id="savaite_29"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>29-34 </td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Bendra apžiūra</td>
+		</tr>
+		<tr>
+			<td id="savaite_32"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>32 </td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Bendra kraujo tyrimas, tyrimai dėl sifilio ir dėl ŽIV</td>
+		</tr>
+		<tr>
+			<td id="savaite_35"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>35-40 </td>
+			<td>Šeimos gydytojas arba akušeris ginekologas</td>
+			<td>Bendra apžiūra
++ nuo 36 savaitės vaisiaus padėties vertinimas</td>
+		</tr>
+		<tr>
+			<td id="savaite_41"><a><img src="https://image.flaticon.com/icons/svg/134/134980.svg" width="25px" title="sliding_arrow" alt="arrow"></a></td>
+			<td>41-42 </td>
+			<td>Akušeris ginekologas</td>
+			<td>+ Kardiotokograma
++ Ultragarsinis tyrimas
++ Priimamas sprendimas dėl kito apsilankymo ar hospitalizavimo</td>
+		</tr>
+	</tbody> 
+</table>
+
+
+<style type="text/css">
+*[id^='savaite_'] a{
+    visibility: hidden;
+    }
+    .entry-content{
+        margin-top: -50px;
+    }
+    
+    .wp-block-table-small{
+           font-family: Montserrat, "Helvetica Neue", sans-serif;
+           text-align: left;
+    }
+    
+     thead th#savaite_0 {
+	width: 6%;	
+}
+thead th#SAVAITE {
+	width: 15%;	
+}
+   #antraste {
+	background-image: url(https://webgradients.com/public/webgradients_png/004%20Juicy%20Peach.png);
+    
+	font-size: large;
+	border-collapse: collapse;
+}
+   
+
+  
+
+</style>
+
+<?php 
+
+$user_id = get_current_user_id(); 
+$key = 'nestumo_pradzia'; 
+$single = false; 
+$user_last = get_user_meta( $user_id, $key, $single ); 
+$reikaliga_data = $user_last[0];
+//echo $reikaliga_data;   
+//echo"\n";
+$today = date("Y/m/d"); 
+//echo $today;
+
+function weeks_between($datefrom, $dateto) {
+    $datefrom = DateTime::createFromFormat('Y/m/d',$datefrom);
+    $dateto = DateTime::createFromFormat('Y/m/d',$dateto);
+    $interval = $datefrom->diff($dateto);
+    $week_total = $interval->format('%a')/7;
+    return floor($week_total);
+}
+
+if($reikaliga_data == null){
+    $reikaliga_data=0;
+}
+$numberOfWeek=weeks_between($reikaliga_data, $today);
+$style = "";
+$number=0;
+
+switch ($numberOfWeek) {
+    case ($numberOfWeek > 0 && $numberOfWeek < 13):
+        $number=12;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break;
+    case 13:
+        $number=13;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break;
+    case 15:
+        $number=15;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 18:
+        $number=18;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 22:
+        $number=22;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 24:
+        $number=24;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 27:
+        $number=27;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break;
+    case 29:
+        $number=29;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 32:
+        $number=32;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 35:
+        $number=35;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break; 
+    case 41:
+        $number=41;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break;
+    default:
+        $number=0;
+        $style = "<style> #savaite_$number,#savaite_$number * {
+                    visibility: visible !important;
+                }
+                </style>";
+        break;
+}
+
+
+?>
+
+
+
+<?php echo $style; ?>
+
+
+
+
